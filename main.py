@@ -19,7 +19,10 @@ def PrimeList(N):
                 is_prime[j] = False
     
     # 收集所有质数
-    primes = [str(i) for i in range(2, N) if is_prime[i]]
+    primes = []
+    for i in range(2, N):
+        if is_prime[i]:
+            primes.append(str(i))
     
     # 用空格连接，末尾无空格
     return " ".join(primes)

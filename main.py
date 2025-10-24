@@ -9,7 +9,8 @@ def PrimeList(N):
     
     # 初始化标记数组，全部设为True
     is_prime = [True] * N
-    is_prime[0] = is_prime[1] = False
+    is_prime[0] = False
+    is_prime[1] = False
     
     # 埃拉托斯特尼筛法
     for i in range(2, int(N**0.5) + 1):
